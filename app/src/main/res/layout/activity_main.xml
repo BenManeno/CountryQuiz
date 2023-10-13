@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What country am from ?"
+        android:text="@string/q1text"
         android:id="@+id/CountryTV"
         android:textStyle="bold"
         android:textSize="30dp"/>
@@ -30,7 +30,7 @@
             android:id="@+id/UgandaBTN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Uganda"
+            android:text="@string/choiceOne"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -40,7 +40,7 @@
             android:id="@+id/PolandBTN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Poland"
+            android:text="@string/ChoiceTwo"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -53,10 +53,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/doneBTN"
+        android:id="@+id/NextBTN"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:text="Check Score"/>
+        android:text="@string/NextBtn"/>
+
+
 
 
 
