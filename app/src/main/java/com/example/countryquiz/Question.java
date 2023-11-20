@@ -7,6 +7,7 @@ public class Question {
     //instance variables
     private String questionText;
     private String correctAnswer;
+    private String hintWeb;
 
     String buttonOneText,buttonTwoText;
 
@@ -17,15 +18,18 @@ public class Question {
         correctAnswer= "";
         buttonOneText="";
         buttonTwoText="";
+
+        hintWeb="";
     }
 
     //pass-through constructor
 
-    public Question(String newQText,String newCorrectAnswer,String newButtonOneText,String newButtonTwoText){
+    public Question(String newQText,String newCorrectAnswer,String newButtonOneText,String newButtonTwoText,String newHintWeb){
         questionText=newQText;
         correctAnswer=newCorrectAnswer;
         buttonOneText = newButtonOneText;
         buttonTwoText=newButtonTwoText;
+       hintWeb=newHintWeb;
     }
 
 
@@ -39,6 +43,9 @@ public class Question {
     public String getCorrectAnswer(){
         return correctAnswer;
 
+    }
+    public String getHintWeb(){
+        return hintWeb;
     }
     public String getButtonOneText(){return buttonOneText;}
     public String getButtonTwoText(){return buttonTwoText;}
@@ -56,6 +63,10 @@ public class Question {
     public void setButtonTwoText(String newButtonTwoText){
         buttonTwoText=newButtonTwoText;
     }
+    public void setHintWeb(String newButtonTwoText){
+        hintWeb=newButtonTwoText;
+    }
+
 
 
 
