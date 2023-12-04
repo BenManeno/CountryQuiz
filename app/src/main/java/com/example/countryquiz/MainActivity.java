@@ -8,29 +8,41 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     private Button openNewBTN;
 
 
 
+
+
  Button notifyBtn;
     Button choiceOneBTN;
     Button choiceTwoBTN;
-    TextView countryTV;
-    Button NextBTN,saveQBTN;
+    TextView countryTV,userNameTV;
+    Button NextBTN;
     int score;
     int currentIndex;
     Question q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,currentQ;
     Question[]questions;
-    String message;
-    //LinearLayout backgroundColors;
-    //    private String fileName= "com.example.countryquiz.quizApp";
-//    private SharedPreferences myPreferences;
-//    SharedPreferences.Editor preferencesEditor;
-//   private final String Color_KEY="color";
+    String message,userName;
+    LinearLayout backgroundColors;
+
+    private String fileName= "com.example.countryquiz.quizApp";
+    private SharedPreferences myPreferences;
+   private final String Color_KEY="color";
+    private final String Name_Key="name";
+
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+
 
 
 
@@ -42,19 +54,22 @@ public class MainActivity extends AppCompatActivity {
         choiceTwoBTN=(Button) findViewById(R.id.PolandBTN);
         countryTV=(TextView) findViewById(R.id.CountryTV);
         NextBTN=(Button) findViewById(R.id.NextBTN) ;
-        score=0;
-        //saveQBTN=(Button)findViewById(R.id.saveQBTN);
+        userNameTV=(TextView)findViewById(R.id.userNameTV) ;
+        backgroundColors=(LinearLayout) findViewById(R.id.backgroundColors);
 
-        //backgroundColors=(LinearLayout) findViewById(R.id.backgroundColors);
+        userName="";
 
-//        myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
-//        preferencesEditor=myPreferences.edit();
-//
-//
-//     int bColors = myPreferences.getInt(Color_KEY,1);
-//     if (bColors==R.color.Blue){
-//         backgroundColors.setBackgroundColor(getResources().getColor(R.color.Blue));
-//     }
+
+        myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
+
+
+      userName = myPreferences.getString(Name_Key,"");
+      userNameTV.setText(userName);
+
+        database=FirebaseDatabase.getInstance();
+        myRef = database.getReference("background");
+
+
 
 
 
@@ -150,14 +165,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //        saveQ/BTN.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                backgroundColors.setBackgroundColor(getResources().getColor(R.color.Blue));
-//                preferencesEditor.putInt(Color_KEY,R.color.Blue);
-//                preferencesEditor.apply();
-//            }
-//        });
+
 
 
 

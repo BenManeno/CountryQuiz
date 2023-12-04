@@ -4,8 +4,15 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:background="@color/yellow"
-    android:gravity="center">
-<!--    android:id="@+id/backgroundColors"-->
+    android:gravity="center"
+    android:id="@+id/backgroundColors">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greetingTV"/>
 
 
     <TextView
@@ -28,11 +35,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/emailBTN"
         android:text="Send Email"/>
-<!--    <Button-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="SAVE  Color "-->
-<!--        android:id="@+id/saveBTN"/>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send score "
+        android:id="@+id/sendScoreBTN"/>
 
 
 
