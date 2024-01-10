@@ -10,31 +10,71 @@
     tools:context=".SettingActivity">
 
 
+
+
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/name"
         android:hint="Enter your name here "/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
 
-    <Button
+
+
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/blue"
-        android:text="Blue"/>
+        android:text="Choose Background Color"
+        android:textSize="20dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+        <Button
+            android:id="@+id/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SkyBlue"
+            android:text="SkyBlue" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/orange"
+        android:textColor="@color/orange"
         android:text="Orange"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:text="LOG IN"/>
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/saveBTN"
+        android:backgroundTint="@color/ForestGreen"
         android:text="Save "/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:backgroundTint="@color/yellow"
+        android:text="LOG IN"/>
+
+
+
 
 </LinearLayout>

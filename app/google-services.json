@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1016583425414:android:f932ddb4894e5914273007",
         "android_client_info": {
-          "package_name": "com.example.countryquiz"
+          "package_name": "org.pattersonclippers.countryquiz"
         }
       },
       "oauth_client": [],

@@ -5,22 +5,278 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:id="@+id/backgroundColors"
+
     android:layout_height="match_parent"
     tools:context=".HighScoreActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:id="@+id/greetingTV"/>
 
-<Space
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+    <Space
+        android:layout_width="199dp"
+        android:layout_height="60dp"/>
 
-    <Button
-        android:id="@+id/sendBTN"
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send to fire base " />
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="High Score "/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:text="Name:  "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:text="   "
+        android:id="@+id/userName1TV"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text=" Score :  "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:text=" "
+        android:id="@+id/userScore1TV"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Name:    "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="   "
+            android:id="@+id/userName2TV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="   Score :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text=" "
+            android:id="@+id/userScore2TV"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Name:    "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="   "
+            android:id="@+id/userName3TV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="  Score :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text=" "
+            android:id="@+id/userScore3TV"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Name:   "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="   "
+            android:id="@+id/userName4TV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="  Score :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text=" "
+            android:id="@+id/userScore4TV"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Name: "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="   "
+            android:id="@+id/userName5TV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="    Score :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text=" "
+            android:id="@+id/userScore5TV"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text=" Name:  "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="   "
+            android:id="@+id/userName6TV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text=" Score :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text=" "
+            android:id="@+id/userScore6TV"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Name:   "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="   "
+            android:id="@+id/userName7TV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="Score :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text=" "
+            android:id="@+id/userScore7TV"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to play again?"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:id="@+id/restartBTN"/>
+
+
+
+
 
 </LinearLayout>

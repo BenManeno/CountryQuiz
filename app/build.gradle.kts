@@ -4,15 +4,17 @@ plugins {
 }
 
 android {
-    namespace = "com.example.countryquiz"
+    namespace = "org.pattersonclippers.countryquiz"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.countryquiz"
+        applicationId = "org.pattersonclippers.countryquiz"
         minSdk = 19
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "3.0"
+
+        multiDexEnabled=true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

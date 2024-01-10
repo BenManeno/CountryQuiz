@@ -23,7 +23,7 @@
         android:text="@string/q1text"
         android:id="@+id/CountryTV"
         android:textStyle="bold"
-        android:textSize="30dp"/>
+        android:textSize="25dp"/>
 
     <Space
         android:layout_width="match_parent"
@@ -70,14 +70,27 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="*If you need help click get hint bellow * "/>
     <Button
         android:id="@+id/openNewBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Hint"
+        android:text="GET HINTS"
         android:textSize="20dp"
 
         android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:contentDescription="This is a pic of washgton"
+        android:src="@drawable/washigton"/>
+
 
     <Space
         android:layout_width="match_parent"
